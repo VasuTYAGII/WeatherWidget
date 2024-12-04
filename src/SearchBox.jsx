@@ -9,8 +9,8 @@ export default function SerachBox({updateInfo}){
 
 
     const API_URL="http://api.openweathermap.org/data/2.5/weather";
-    const API_KEY="96dd8c84c08ad30223b3ba82ef715d07"
- 
+    const API_KEY="96dd8c84c08ad30223b3ba82ef715d07";
+
     let getWeatherInfo=async ()=>{
         try{
         let res=await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);     
